@@ -13,7 +13,7 @@ function get_db_config(){
         ];
     } else {
         return $db_config = [
-            'connection' => env('DB_CONNETCION', mysql),
+            'connection' => env('DB_CONNETCION', 'mysql'),
             'host' => env('DB_HOST', 'localhost'),
             'database' => env('DB_DATABASE', 'forge'),
             'username' => env('DB_USERNAME', 'forge'),
